@@ -5,10 +5,10 @@ A RESTful backend built with **Node.js** and **Sequelize ORM**, organized in a l
 ## Tech Stack
 
 - Node.js, Express.js
-- Sequelize ORM with [PostgreSQL / MySQL — pick yours]
-- [Validation library, e.g. Joi / express-validator]
-- [Logger, e.g. Winston]
-- [Auth, e.g. JWT]
+- Sequelize ORM with MySQL
+- Validation library: express-joi-validation
+- Logger: Winston
+- Auth: JWT
 
 ## Project Structure
 
@@ -35,7 +35,7 @@ Keeping controllers thin and putting business logic in services makes the code e
 ### Prerequisites
 
 - Node.js v[18+]
-- [PostgreSQL / MySQL] running locally or remotely
+- MySQL running locally or remotely
 - npm or yarn
 
 ### Installation
@@ -59,7 +59,7 @@ DB_PORT=5432
 DB_NAME=your_database
 DB_USER=your_user
 DB_PASSWORD=your_password
-DB_DIALECT=postgres
+DB_DIALECT=mysql
 
 JWT_SECRET=your_secret   # if authentication is used
 ```
